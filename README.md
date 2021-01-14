@@ -17,7 +17,7 @@
 
 ```clojure
 (ns my-ns
-  (:require [shuriken.core :refer :all]))
+  (:require [derida.core :refer :all]))
 ```
 
 ## [API doc](https://unexpectedness.github.io/derrida/index.html)
