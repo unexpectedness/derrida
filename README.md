@@ -11,7 +11,7 @@
 # Usage
 
 ```clojure
-[derrida "0.1.1"]
+[net.clojars.unexpectedness/derrida "0.1.1"]
 ```
 
 

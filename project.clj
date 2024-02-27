@@ -1,4 +1,4 @@
-(defproject derrida "0.1.1"
+(defproject net.clojars.unexpectedness/derrida "0.1.1"
   :description "Destructuring Destructuring"
   :url         "https://github.com/unexpectedness/derrida"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -6,7 +6,7 @@
   :dependencies [[org.clojure/clojure       "1.10.0"   :scope "provided"]
                  [org.clojure/clojurescript "1.10.764" :scope "provided"]
                  [net.cgrand/macrovich      "0.2.1"]]
-  :plugins [[lein-codox     "0.10.7"]
+  :plugins [[lein-codox     "0.10.8"]
             [lein-cljsbuild "1.1.8"]
             [lein-doo       "0.1.11"]]
   :prep-tasks ["compile" ["cljsbuild" "once"]]
@@ -42,7 +42,6 @@
   :aliases {"test"    ["with-profile" "test" ["do" ["test"] ["doo" "once"]]]
             "deploy"  ["with-profile" "release" "deploy"]
             "release" ["with-profile" "release" "release"]}
-  :codox {:output-path "codox"
-          :source-uri  "https://github.com/unexpectedness/derrida/blob/{version}/{filepath}#L{line}"
+  :codox {:source-uri  "https://github.com/unexpectedness/derrida/blob/{version}/{filepath}#L{line}"
           :metadata    {:doc/format :markdown}
           :themes      [:rdash]})
